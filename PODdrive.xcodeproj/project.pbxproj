@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A00AD419F067970080CB0D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 09A00AD319F067970080CB0D /* main.c */; };
+		09A00AD719F067970080CB0D /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 09A00AD619F067970080CB0D /* Makefile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0955D4FC19FFF6E4005EE6BB /* PODdrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PODdrive.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		09A00AD019F067970080CB0D /* Index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Index; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A00AD319F067970080CB0D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = main.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		09A00AD619F067970080CB0D /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		09A00C4E1A9BE98A00D967BD /* ToDos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDos.txt; sourceTree = "<group>"; };
+		09A57F781A16A1D800A40E6B /* i2clcd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = i2clcd.c; sourceTree = "<group>"; };
+		09A57F791A16A1D800A40E6B /* i2clcd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = i2clcd.h; sourceTree = "<group>"; };
+		09A57F7A1A16A1D800A40E6B /* i2cmaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = i2cmaster.h; sourceTree = "<group>"; };
+		09A57F7B1A16A1D800A40E6B /* twimaster.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = twimaster.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		09A00AC519F067970080CB0D = {
+			isa = PBXGroup;
+			children = (
+				09A00C4E1A9BE98A00D967BD /* ToDos.txt */,
+				09A00AD219F067970080CB0D /* PODdrive */,
+				09A00AD119F067970080CB0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09A00AD119F067970080CB0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09A00AD019F067970080CB0D /* Index */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09A00AD219F067970080CB0D /* PODdrive */ = {
+			isa = PBXGroup;
+			children = (
+				09A57F781A16A1D800A40E6B /* i2clcd.c */,
+				09A57F791A16A1D800A40E6B /* i2clcd.h */,
+				09A57F7A1A16A1D800A40E6B /* i2cmaster.h */,
+				09A57F7B1A16A1D800A40E6B /* twimaster.c */,
+				0955D4FC19FFF6E4005EE6BB /* PODdrive.h */,
+				09A00AD319F067970080CB0D /* main.c */,
+				09A00AD519F067970080CB0D /* Makefiles */,
+			);
+			path = PODdrive;
+			sourceTree = "<group>";
+		};
+		09A00AD519F067970080CB0D /* Makefiles */ = {
+			isa = PBXGroup;
+			children = (
+				09A00AD619F067970080CB0D /* Makefile */,
+			);
+			name = Makefiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		09A00ACA19F067970080CB0D /* All */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "all -C \"$(PROJECT)\"";
+			buildConfigurationList = 09A00ADA19F067970080CB0D /* Build configuration list for PBXLegacyTarget "All" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			dependencies = (
+			);
+			name = All;
+			passBuildSettingsInEnvironment = 1;
+			productName = All;
+		};
+		09A00ACB19F067970080CB0D /* Build */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "clean build -C \"$(PROJECT)\"";
+			buildConfigurationList = 09A00ADD19F067970080CB0D /* Build configuration list for PBXLegacyTarget "Build" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			dependencies = (
+			);
+			name = Build;
+			passBuildSettingsInEnvironment = 1;
+			productName = Build;
+		};
+		09A00ACC19F067970080CB0D /* Upload */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "clean build program -C \"$(PROJECT)\"";
+			buildConfigurationList = 09A00AE019F067970080CB0D /* Build configuration list for PBXLegacyTarget "Upload" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			dependencies = (
+			);
+			name = Upload;
+			passBuildSettingsInEnvironment = 1;
+			productName = Upload;
+		};
+		09A00ACD19F067970080CB0D /* Clean */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "clean -C \"$(PROJECT)\"";
+			buildConfigurationList = 09A00AE319F067970080CB0D /* Build configuration list for PBXLegacyTarget "Clean" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			dependencies = (
+			);
+			name = Clean;
+			passBuildSettingsInEnvironment = 1;
+			productName = Clean;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		09A00ACF19F067970080CB0D /* Index */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09A00AE619F067970080CB0D /* Build configuration list for PBXNativeTarget "Index" */;
+			buildPhases = (
+				09A00ACE19F067970080CB0D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Index;
+			productName = Index;
+			productReference = 09A00AD019F067970080CB0D /* Index */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09A00AC619F067970080CB0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Anant M. Khadkikar";
+				TargetAttributes = {
+					09A00ACA19F067970080CB0D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					09A00ACB19F067970080CB0D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					09A00ACC19F067970080CB0D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					09A00ACD19F067970080CB0D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					09A00ACF19F067970080CB0D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 09A00AC919F067970080CB0D /* Build configuration list for PBXProject "PODdrive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 09A00AC519F067970080CB0D;
+			productRefGroup = 09A00AD119F067970080CB0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09A00ACA19F067970080CB0D /* All */,
+				09A00ACB19F067970080CB0D /* Build */,
+				09A00ACC19F067970080CB0D /* Upload */,
+				09A00ACD19F067970080CB0D /* Clean */,
+				09A00ACF19F067970080CB0D /* Index */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09A00ACE19F067970080CB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A00AD719F067970080CB0D /* Makefile in Sources */,
+				09A00AD419F067970080CB0D /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		09A00AD819F067970080CB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1,",
+					"__AVR_ATmega1284P__,",
+					"F_CPU=20000000",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/bin/;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PATH = "$(PATH):$(PROJECT_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09A00AD919F067970080CB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__AVR_ATmega1284P__,",
+					"F_CPU=20000000",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/bin/;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PATH = "$(PATH):$(PROJECT_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		09A00ADB19F067970080CB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09A00ADC19F067970080CB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		09A00ADE19F067970080CB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		09A00ADF19F067970080CB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		09A00AE119F067970080CB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		09A00AE219F067970080CB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		09A00AE419F067970080CB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		09A00AE519F067970080CB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		09A00AE719F067970080CB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		09A00AE819F067970080CB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09A00AC919F067970080CB0D /* Build configuration list for PBXProject "PODdrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A00AD819F067970080CB0D /* Debug */,
+				09A00AD919F067970080CB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A00ADA19F067970080CB0D /* Build configuration list for PBXLegacyTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A00ADB19F067970080CB0D /* Debug */,
+				09A00ADC19F067970080CB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A00ADD19F067970080CB0D /* Build configuration list for PBXLegacyTarget "Build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A00ADE19F067970080CB0D /* Debug */,
+				09A00ADF19F067970080CB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A00AE019F067970080CB0D /* Build configuration list for PBXLegacyTarget "Upload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A00AE119F067970080CB0D /* Debug */,
+				09A00AE219F067970080CB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A00AE319F067970080CB0D /* Build configuration list for PBXLegacyTarget "Clean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A00AE419F067970080CB0D /* Debug */,
+				09A00AE519F067970080CB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A00AE619F067970080CB0D /* Build configuration list for PBXNativeTarget "Index" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A00AE719F067970080CB0D /* Debug */,
+				09A00AE819F067970080CB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09A00AC619F067970080CB0D /* Project object */;
+}
