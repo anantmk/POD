@@ -110,7 +110,7 @@ int main(void)
     lcd_printlc_P(1,1, PSTR("              |     "));
     lcd_printlc_P(2,1, PSTR("PODdrive     ====|  "));
     lcd_printlc_P(3,1, PSTR("                    "));
-    lcd_printlc_P(4,1, PSTR("V0.5 alpha       amk"));
+    lcd_printlc_P(4,1, PSTR("V0.5             amk"));
     
     _delay_ms(1000);
     
