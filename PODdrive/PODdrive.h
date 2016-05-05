@@ -43,18 +43,6 @@
 #define CH7     6
 #define CH8     7
 
-//PWM output channels
-//#define POD_PWMCH_PORT  PORTB
-//#define POD_PWMCH_1     PINB0
-//#define POD_PWMCH_2     PINB1
-//#define POD_PWMCH_3     PINB2
-//#define POD_PWMCH_4     PINB3
-//#define POD_PWMCH_5     PINB4
-//#define POD_PWMCH_6     PINB5
-//#define POD_PWMCH_7     PINB6
-//#define POD_PWMCH_8     PINB7
-//#define POD_PWMCH_DDR   DDR(POD_PWMCH_PORT)
-
 //Stepper output
 #define POD_STEP_PORT   PORTA
 #define POD_STEP1_DIR   PINA0
@@ -76,6 +64,7 @@
 #define POD_HALLSENS_4      PINC7
 #define POD_HALLSENS_DDR    DDR(POD_HALLSENS_PORT)
 
+//to be changed
 //Key intputs
 #define KEY_DDR         DDRD
 #define KEY_PORT        PORTD
@@ -90,6 +79,7 @@
 #define REPEAT_START    50                        // after 500ms
 #define REPEAT_NEXT     20                        // every 200ms
 
+//to be changed
 //LED
 #define LED_DDR         DDRD
 #define LED_PORT        PORTD
